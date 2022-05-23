@@ -35,6 +35,8 @@ body {
   width: 100%;
   transition: all 0.6s;
   background-color: transparent;
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
 }
 .input__date {
   background-color: transparent;
@@ -48,7 +50,7 @@ body {
   margin-top: 0.5rem ;
   margin-left: -0.5rem;
 }
-.dataAndCheckBoxes {
+.checkData {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,7 +71,7 @@ body {
   justify-content: center;
   align-items: center;
 } 
-.input__checkboxandLebel {
+.input__check {
   display: flex;
   margin-top: 1.3rem;
 }
@@ -84,4 +86,13 @@ body {
   border: #85603f solid;
   color: #000;
   border-radius: 40px;
+  background-color: transparent;
+}
+
+.inputValidation:invalid {
+  border: 2px solid rgb(211, 112, 112);
+  border-radius: 9px;
+}
+.inputValidation:invalid + .allLabels {
+  border: 2px solid rgb(211, 112, 112);
 }

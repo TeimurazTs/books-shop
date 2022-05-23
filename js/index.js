@@ -84,7 +84,7 @@ chartDiv.append(chartDivPrice);
 let confirmOrderButtonA = document.createElement("a");
 confirmOrderButtonA.classList.add("confirmOrderButtonA");
 confirmOrderButtonA.textContent = "Confirm order";
-confirmOrderButtonA.setAttribute("href", "../confirmOrder.html");
+confirmOrderButtonA.setAttribute("href", "../index2.html");
 chartDiv.append(confirmOrderButtonA);
 
 // main P stuff

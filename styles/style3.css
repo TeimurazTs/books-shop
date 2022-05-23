@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(148, 237, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  height: 80vh;
+}

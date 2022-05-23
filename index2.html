@@ -20,9 +20,10 @@
     <title>Confirm Order</title>
   </head>
   <body>
-    <form action="./confirmOrder2.html" class="form__div" id="form">
+    <form action="./index3.html" class="form__div" id="form">
       <div class="form__group">
         <input
+          placeholder="Firstname*"
           pattern="[a-zA-Z'-'\s]*"
           type="text"
           id="fname"
@@ -32,10 +33,11 @@
           required
         />
         <span class="form__span"></span>
-        <label for="fname" class="form__label allLabels">Firstname*</label>
+        <!-- <label for="fname" class="form__label allLabels">Firstname*</label> -->
       </div>
       <div class="form__group">
         <input
+          placeholder="Lastname*"
           pattern="[a-zA-Z'-'\s]*"
           type="text"
           id="lname"
@@ -46,10 +48,11 @@
           required
         />
         <span class="form__span"></span>
-        <label for="lname" class="form__label allLabels">Lastname*</label>
+        <!-- <label for="lname" class="form__label allLabels">Lastname*</label> -->
       </div>
       <div class="form__group">
         <input
+          placeholder="Street*"
           type="text"
           id="street"
           minlength="5"
@@ -57,10 +60,11 @@
           required
         />
         <span class="form__span"></span>
-        <label for="street" class="form__label allLabels">Street*</label>
+        <!-- <label for="street" class="form__label allLabels"></label> -->
       </div>
       <div class="form__group">
         <input
+          placeholder="House number*"
           type="number"
           min="0"
           id="house"
@@ -68,10 +72,11 @@
           required
         />
         <span class="form__span"></span>
-        <label for="house" class="form__label allLabels">House number*</label>
+        <!-- <label for="house" class="form__label allLabels">House number*</label> -->
       </div>
       <div class="form__group">
         <input
+          placeholder="flat number*"
           min="0"
           id="flat"
           class="form__input allInputs"
@@ -79,12 +84,11 @@
           required
         />
         <span class="form__span"></span>
-        <label for="flat" class="form__label allLabels">flat number*</label>
+        <!-- <label for="flat" class="form__label allLabels">flat number*</label> -->
       </div>
-      <div class="dataAndCheckBoxes">
+      <div class="checkData">
         <div>
           <div class="forms__date">
-            <label for="delivery">Delivery Date* </label>
             <input
               type="date"
               id="delivery"
@@ -120,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="input__checkboxandLebel">
+        <div class="input__check">
           <label>Choose gift</label>
           <div class="input__checkbox">
             <input
