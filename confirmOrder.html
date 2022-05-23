@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style2.css" />
+    <title>Confirm Order</title>
+  </head>
+  <body>
+    <form action="./confirmOrder2.html" class="form__div" id="form">
+      <div class="form__group">
+        <input
+          pattern="[a-zA-Z'-'\s]*"
+          type="text"
+          id="fname"
+          minlength="4"
+          name="fname"
+          class="form__input allInputs"
+          required
+        />
+        <span class="form__span"></span>
+        <label for="fname" class="form__label allLabels">Firstname*</label>
+      </div>
+      <div class="form__group">
+        <input
+          pattern="[a-zA-Z'-'\s]*"
+          type="text"
+          id="lname"
+          minlength="5"
+          name="lname"
+          class="form__input allInputs"
+          id=""
+          required
+        />
+        <span class="form__span"></span>
+        <label for="lname" class="form__label allLabels">Lastname*</label>
+      </div>
+      <div class="form__group">
+        <input
+          type="text"
+          id="street"
+          minlength="5"
+          class="form__input allInputs"
+          required
+        />
+        <span class="form__span"></span>
+        <label for="street" class="form__label allLabels">Street*</label>
+      </div>
+      <div class="form__group">
+        <input
+          type="number"
+          min="0"
+          id="house"
+          class="form__input allInputs"
+          required
+        />
+        <span class="form__span"></span>
+        <label for="house" class="form__label allLabels">House number*</label>
+      </div>
+      <div class="form__group">
+        <input
+          min="0"
+          id="flat"
+          class="form__input allInputs"
+          pattern="^[0-9]+(-[0-9]+)*?$"
+          required
+        />
+        <span class="form__span"></span>
+        <label for="flat" class="form__label allLabels">flat number*</label>
+      </div>
+      <div class="dataAndCheckBoxes">
+        <div>
+          <div class="forms__date">
+            <label for="delivery">Delivery Date* </label>
+            <input
+              type="date"
+              id="delivery"
+              class="input__date form__input allInputs"
+              required
+            />
+          </div>
+          <div class="input__payment">
+            <label for="cash">Payment method*</label>
+            <div class="input__cashAndCard">
+              <div class="input__cash">
+                <input
+                  type="radio"
+                  id="cash"
+                  name="payment"
+                  class="allInputs"
+                  value="Cash"
+                  required
+                />
+                <label for="cash" class="form__label allLabels">Cash</label>
+              </div>
+              <div class="input__card">
+                <input
+                  type="radio"
+                  id="card"
+                  name="payment"
+                  class="allInputs"
+                  value="Card"
+                  required
+                />
+                <label for="card" class="form__label allLabels">Card</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input__checkboxandLebel">
+          <label>Choose gift</label>
+          <div class="input__checkbox">
+            <input
+              type="checkbox"
+              id="gift"
+              class="maxTwoCheck allInputs"
+              value="pack as a gift"
+            />
+            <label for="gift" class="allLabels">pack as a gift</label> <br />
+            <input
+              type="checkbox"
+              id="postcard"
+              class="maxTwoCheck allInputs"
+              value="add postcard"
+            />
+            <label for="postcard" class="allLabels">add postcard</label> <br />
+            <input
+              type="checkbox"
+              id="discount"
+              class="maxTwoCheck allInputs"
+              value="2% discount"
+            />
+            <label for="discount" class="allLabels">2% discount</label>
+            <br />
+            <input
+              type="checkbox"
+              id="branded"
+              class="maxTwoCheck allInputs"
+              value="branded pencil"
+            />
+            <label for="branded" class="allLabels">branded pencil</label><br />
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="completeBtn" id="completeBtn">
+        Complete
+      </button>
+    </form>
+    <script src="./js/index2.js"></script>
+  </body>
+</html>

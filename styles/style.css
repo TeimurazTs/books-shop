@@ -1,0 +1,240 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.section {
+  background-color: rgb(148, 237, 252);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerLogo {
+  font-family: "Smooch", cursive;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.headerUl {
+  display: flex;
+  gap: 4rem;
+}
+
+.headerLi {
+  font-family: "Smooch", cursive;
+  font-size: 3rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.headerLi:hover {
+  transform: translateY(-0.5rem);
+}
+
+.mainP {
+  font-family: "Tangerine", cursive;
+  font-size: 6rem;
+  text-align: center;
+  height: 15rem;
+}
+
+.mainDiv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.image {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 1rem;
+  justify-self: center;
+  transition: all 0.2s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.authorName {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  visibility: hidden;
+  width: 20rem;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1rem 1rem 0 1rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 17%;
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+}
+
+.title {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.price {
+  font-family: "Tangerine", cursive;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.price::before {
+  content: "Price: ";
+  font-family: "Tangerine", cursive;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.price::after {
+  content: "$";
+  font-family: "Tangerine", cursive;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.bookDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.bookDiv:hover > .addToChartButton {
+  display: block;
+}
+
+.button {
+  background-color: rgb(17, 90, 124);
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.addToChartButton {
+  background-color: rgb(17, 90, 124);
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  padding: 1rem 0.43rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  transform: translate(0, -50%);
+  display: none;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.chartDiv {
+  background-color: rgb(122, 161, 173);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+}
+
+.chartDivP {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.display-none {
+  display: none;
+}
+
+.chartDivPrice {
+  font-family: "Tangerine", cursive;
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: rgb(17, 90, 124);
+  position: absolute;
+  top: -6rem;
+  left: 20%;
+  padding: 1rem 0.43rem;
+  cursor: pointer;
+}
+
+.confirmOrderButtonA {
+  background-color: rgb(17, 90, 124);
+  font-family: "Tangerine", cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 0.43rem;
+  cursor: pointer;
+  position: absolute;
+  top: -6rem;
+  right: 20%;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
