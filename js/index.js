@@ -116,7 +116,7 @@ function addText(textData) {
 
 addText(wisdom);
 
-fetch("./json/books.json")
+fetch("./js/books.json")
   .then((response) => {
     return response.json();
   })
