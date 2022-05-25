@@ -1,7 +1,5 @@
-// create section
-let section = document.createElement("section");
-section.classList.add("section");
-document.body.appendChild(section);
+let fragment = new DocumentFragment();
+const section = document.querySelector(".section");
 
 // create header
 
@@ -207,7 +205,7 @@ function addToChartFunc(e) {
     document
       .querySelector(`.${e.target.classList[1]}`)
       .childNodes[5].classList.add("display-none");
-      countPrice();
+    countPrice();
   }
 }
 
@@ -221,3 +219,5 @@ function countPrice() {
   document.querySelector(".chartDivPrice").textContent =
     "Total: " + totalPrice + "$";
 }
+
+section.append(fragment);

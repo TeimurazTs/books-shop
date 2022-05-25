@@ -24,7 +24,7 @@ const form = document.getElementById("form");
 const formInputs = document.getElementsByClassName("allInputs");
 
 for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("onchange", () => {
+  formInputs[i].addEventListener("change", () => {
     buttonUpdate();
   });
 }
